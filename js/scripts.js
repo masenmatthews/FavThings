@@ -7,8 +7,15 @@ $(document).ready(function() {
     var favThing5 = $("input#favThing5").val();
 
     var favThingsArray = [favThing1, favThing2, favThing3, favThing4, favThing5];
-    
-    alert(favThingsArray);
+
+    $(".favThing1").text(favThingsArray[0]);
+    $(".favThing2").text(favThingsArray[1]);
+    $(".favThing3").text(favThingsArray[2]);
+    $(".favThing4").text(favThingsArray[3]);
+    $(".favThing5").text(favThingsArray[4]);
+
+    $("#favThingsList").show();
+
     event.preventDefault();
   });
 });
