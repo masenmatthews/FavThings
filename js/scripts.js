@@ -7,6 +7,8 @@ $(document).ready(function() {
     var favThing5 = $("input#favThing5").val();
 
     var favThingsArray = [favThing1, favThing2, favThing3, favThing4, favThing5];
+    var favThingsArrayTwo = [favThingsArray[1], favThingsArray[0], favThingsArray[2]];
+      alert(favThingsArrayTwo);
 
     $(".favThing1").text(favThingsArray[0]);
     $(".favThing2").text(favThingsArray[1]);
@@ -15,6 +17,8 @@ $(document).ready(function() {
     $(".favThing5").text(favThingsArray[4]);
 
     $("#favThingsList").show();
+    $("#favThingsListTwo").show();
+    // alert(favThingsArrayTwo);
 
     event.preventDefault();
   });
